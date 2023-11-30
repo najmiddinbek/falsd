@@ -47,7 +47,7 @@ export default function page() {
             <p className='text-xl md:text-2xl text-white text-center mt-2 mb-7'>Bu loyiha yordamida mijozlar hamda stadion egasi shu qulayliklarga ega bo`ladi</p>
             <div className='grid grid-cols-1 lg:grid-cols-3 gap-2'>
                 {data.map((date, id) => (
-                    <div className='card text-[#FFA537] p-6'>
+                    <div key={id} className='card text-[#FFA537] p-6'>
                         <div className='text-3xl md:text-5xl lg:text-9xl'>{date.icon}</div>
                         <h3 className='text-white text-[15px] pt-5 md:text-xl md:pt-10'>{date.description}</h3>
                     </div>
